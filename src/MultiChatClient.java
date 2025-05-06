@@ -1,3 +1,4 @@
+import java.net.InetAddress;
 import java.net.MulticastSocket;
 
 public class MultiChatClient{
@@ -12,7 +13,8 @@ public class MultiChatClient{
     // Create a Multitastsocket 
     MulticastSocket serverMulticastSocket = new MulticastSocket(portnumber);
     
-    //Determine the IP address of a host 
+    //Determine the IP address of a host, given the host name
+    InetAddress group = InetAddress.getByName("225.4.5.6");
 
     
     }
