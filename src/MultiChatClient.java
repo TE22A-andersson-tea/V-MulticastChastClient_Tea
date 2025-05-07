@@ -6,7 +6,7 @@ public class MultiChatClient{
     public static void main(String[] args) throws Exception {
     
     //Default port number we are going to use
-    int portnumber = 5000;
+    int portnumber = 5002;
     if (args.length >=1) {
         portnumber = Integer.parseInt(args[0]);
     }
@@ -32,6 +32,6 @@ public class MultiChatClient{
 
     //Close the socket
     chatMulticastSocket.close();
-    
+
     }
 }
